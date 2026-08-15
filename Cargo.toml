@@ -1,0 +1,11 @@
+[package]
+name = "axiom-solver"
+version = "0.1.0"
+edition = "2021"
+description = "Finite-domain logical backend and SMT-LIB bridge for Axiom"
+license = "MIT"
+publish = false
+
+[dependencies]
+anyhow = "1"
+
