@@ -1,17 +1,5 @@
-# axiom-solver
+# axiom-solver v0.2.0
 
-The first solver backend. It evaluates Axiom postconditions over a finite integer domain and can emit an SMT-LIB
-skeleton for migration to Z3/cvc5.
-
-> **Maturity:** research prototype v0.1. The default verifier proves properties by exhaustive evaluation over an
-> explicitly finite input domain. A VALID receipt is therefore a theorem about that bounded model, not a claim of
-> unbounded program correctness.
-
-
-Supported clauses in v0.1 include comparisons against `result`, `x`, `-x`, integer constants, conjunction (`&&`) and
-disjunction (`||`).
-
-```bash
-cargo run -- eval spec.aix --x -7 --result 7
-cargo run -- smt spec.aix
-```
+Compiles the supported Axiom arithmetic/boolean fragment to SMT-LIB2. Unlike v0.1, postconditions are translated rather
+than emitted as TODO comments. A production backend is expected to invoke Z3/cvc5 and validate or reconstruct solver
+evidence.
