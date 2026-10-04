@@ -190,6 +190,8 @@ fn split_top<'a>(expr: &'a str, op: &str) -> Option<(&'a str, &'a str)> {
 
 #[cfg(test)]
 mod tests {
+    use super::to_smt_bool;
+
     #[test]
     fn translates_abs_postcondition() {
         assert_eq!(

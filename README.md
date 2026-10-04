@@ -1,5 +1,9 @@
 # axiom-solver v0.2.0
 
-Compiles the supported Axiom arithmetic/boolean fragment to SMT-LIB2. Unlike v0.1, postconditions are translated rather
-than emitted as TODO comments. A production backend is expected to invoke Z3/cvc5 and validate or reconstruct solver
-evidence.
+Компилирует поддерживаемый арифметико-логический фрагмент Axiom в SMT-LIB2. В отличие от v0.1, постусловия действительно
+транслируются, а не оставляются как TODO. Production-backend должен вызывать Z3/cvc5 и валидировать либо
+реконструировать solver evidence.
+
+## Связанные исследования
+
+Этот компонент входит в исследовательский проект [Axiom](https://github.com/localzet/axiom-stack). Все компоненты собраны по теме [localzet-axiom](https://github.com/topics/localzet-axiom). Основной язык документации — русский. Исследовательские результаты и ограничения не означают готовность к промышленному применению.
